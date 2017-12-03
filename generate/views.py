@@ -5,7 +5,7 @@ import random
 from django.shortcuts import render
 
 # Get raw text as string.
-with open("collegestuf.txt", "r", encoding="utf-8") as f:
+with open("data.txt", "r", encoding="utf-8") as f:
     text = f.read()
 
 text.encode("utf-8");

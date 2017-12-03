@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta charset = "utf-8">
+    <title>College Application Essay Generator</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
-  <title>College Essay Generator</title>
+  <style>
+  h1{
+    color: #808080;
+    text-align: center;
+    font: 36px;
+  }
+  div{
+    color: #b3b3b3;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    font: 5px;
+  }
+
+  h3{
+    background-color: #f2f2f2;
+    box-shadow: 0 25px 50px #bfbfbf;
+    color: #808080;
+    position: relative;
+    padding: 15px 15px;
+    width: 80%;
+    height: 95%;
+    border:25px;
+    margin: auto;
+  }
+  .button{
+    background-color: #cccccc;
+    font: 20px;
+    border: 2px solid #000000;
+    padding: 16px 40px;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  .button:hover{
+    background-color: #a5a5a5;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  .button2{
+    position: absolute;
+    right: 675px;
+    background-color: #cccccc;
+    font: 20px;
+    border: 2px solid #000000;
+    padding: 16px 40px;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  .button2:hover{
+    background-color: #a5a5a5;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  body{
+    background-color: #ffffff;
+  }
+  </style>
   <body style="font-family: 'Roboto', sans-serif;">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <h1>College Application Essay Generator</h1>
-    {{ content|linebreaks }}
+    <div>Created by Jacques Scheire, Tyler Chen, Kees Luijendijk, Evan Wang</div>
+    <br>
+    <br>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <h3>{{ content|linebreaks }}</h3>
   </body>
 </html>
